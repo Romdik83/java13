@@ -27,6 +27,14 @@ public class PosterFilmManagerTest {
     }
 
     @Test
+    public void PosterFilm() {
+        PosterFilmManager manager = new PosterFilmManager();
+        String[] expected = {};
+        String[] actual = manager.getFilms();
+        Assertions.assertArrayEquals(expected, actual);
+    }
+
+    @Test
     public void findAll() {
 
         String[] expected = {"film1", "film2", "film3", "film4", "film5", "film6", "film7"};
@@ -35,12 +43,11 @@ public class PosterFilmManagerTest {
     }
 
 
-
     @Test
     public void findLast() {
 
         String[] expected = {"film7", "film6", "film5"};
-        String[] actual = manager.findLastLimitLimit();
+        String[] actual = manager.findLast();
         Assertions.assertArrayEquals(expected, actual);
     }
 }

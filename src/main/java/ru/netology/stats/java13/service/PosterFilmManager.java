@@ -17,7 +17,7 @@ public class PosterFilmManager {
         return films;
     }
 
-    public String[] findLastLimitLimit() {
+    public String[] findLast() {
         String[] tmp = new String[3];
         for (int i = 0; i < tmp.length; i++) {
             tmp[i] = films[films.length - 1 - i];
