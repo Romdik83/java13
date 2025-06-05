@@ -1,8 +1,12 @@
 package ru.netology.stats.java13.service;
 
 public class PosterFilmManager {
-    private int countFilm = 7;
     private String[] films = new String[0];
+    private int countFilm;
+
+    public PosterFilmManager() {
+        this.countFilm = 7;
+    }
 
 
     public void findAll(String film) {
