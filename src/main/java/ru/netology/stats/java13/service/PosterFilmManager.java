@@ -1,10 +1,14 @@
 package ru.netology.stats.java13.service;
 
 public class PosterFilmManager {
-    private String[] films = new String[0];
-    private int countFilm;
+    private String[] films = new String[0];// менеджер не содержит фильмы после создания
+    private int countFilm; // значение количества фильмов по умолчанию
 
-    public PosterFilmManager() {
+    public PosterFilmManager(int countFilm) { //конструктор с изменяемым количеством фильмов
+        this.countFilm = countFilm;
+    }
+
+    public PosterFilmManager() { //конструктор со значением количества фильмов по умолчанию
         this.countFilm = 7;
     }
 
