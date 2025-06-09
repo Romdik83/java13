@@ -9,7 +9,7 @@ public class PosterFilmManager {
     }
 
     public PosterFilmManager() { //конструктор со значением количества фильмов по умолчанию
-        this.countFilm = 7;
+        this.countFilm = 3;
     }
 
 
