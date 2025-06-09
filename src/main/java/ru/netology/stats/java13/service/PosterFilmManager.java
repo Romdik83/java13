@@ -26,7 +26,7 @@ public class PosterFilmManager {
     }
 
     public String[] findLast() {
-        String[] tmp = new String[3];
+        String[] tmp = new String[5];
         for (int i = 0; i < tmp.length; i++) {
             tmp[i] = films[films.length - 1 - i];
         } return tmp;

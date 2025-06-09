@@ -46,7 +46,7 @@ public class PosterFilmManagerTest {
     @Test
     public void findLast() {
 
-        String[] expected = {"film7", "film6", "film5"};
+        String[] expected = {"film7", "film6", "film5", "film4", "film3"};
         String[] actual = manager.findLast();
         Assertions.assertArrayEquals(expected, actual);
     }
