@@ -50,4 +50,13 @@ public class PosterFilmManagerTest {
         String[] actual = manager.findLast();
         Assertions.assertArrayEquals(expected, actual);
     }
+
+    @Test
+    public void PosterFilm1() {
+        PosterFilmManager manager = new PosterFilmManager(4);
+        String[] expected = {};
+        String[] actual = manager.getFilms();
+        Assertions.assertArrayEquals(expected, actual);
+    }
+
 }
