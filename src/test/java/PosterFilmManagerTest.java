@@ -7,13 +7,13 @@ import org.junit.jupiter.api.Test;
 public class PosterFilmManagerTest {
 
     PosterFilmManager manager = new PosterFilmManager();
-    ru.netology.stats.java13.service.PosterFilm film1 = new ru.netology.stats.java13.service.PosterFilm(1, "Бладшот", "боевик");
-    ru.netology.stats.java13.service.PosterFilm film2 = new ru.netology.stats.java13.service.PosterFilm(2, "Вперёд", "мультфильм");
-    ru.netology.stats.java13.service.PosterFilm film3 = new ru.netology.stats.java13.service.PosterFilm(3, "Отель Белград", "комедия");
-    ru.netology.stats.java13.service.PosterFilm film4 = new ru.netology.stats.java13.service.PosterFilm(4, "Джентельмены", "боевик");
-    ru.netology.stats.java13.service.PosterFilm film5 = new ru.netology.stats.java13.service.PosterFilm(5, "Человек-невидимка", "ужасы");
-    ru.netology.stats.java13.service.PosterFilm film6 = new ru.netology.stats.java13.service.PosterFilm(6, "Тролли. Мировой тур", "мультфильм");
-    ru.netology.stats.java13.service.PosterFilm film7 = new ru.netology.stats.java13.service.PosterFilm(7, "Номер один", "комедия");
+    PosterFilm film1 = new PosterFilm(1, "Бладшот", "боевик");
+    PosterFilm film2 = new PosterFilm(2, "Вперёд", "мультфильм");
+    PosterFilm film3 = new PosterFilm(3, "Отель Белград", "комедия");
+    PosterFilm film4 = new PosterFilm(4, "Джентельмены", "боевик");
+    PosterFilm film5 = new PosterFilm(5, "Человек-невидимка", "ужасы");
+    PosterFilm film6 = new PosterFilm(6, "Тролли. Мировой тур", "мультфильм");
+    PosterFilm film7 = new PosterFilm(7, "Номер один", "комедия");
 
     @BeforeEach
     public void setup() {
