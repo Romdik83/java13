@@ -3,7 +3,6 @@ package ru.netology.stats.java13.service;
 public class PosterFilmManager {
     private String[] films = new String[0];// менеджер не содержит фильмы после создания
     private int countFilm; // значение количества фильмов по умолчанию
-    private int limit;
 
     public PosterFilmManager(int countFilm) { //конструктор с изменяемым количеством фильмов
         this.countFilm = countFilm;
@@ -22,7 +21,9 @@ public class PosterFilmManager {
         tmp[tmp.length - 1] = film;
         films = tmp;
     }
+
     public String[] findAll() {
+
         return films;
     }
 
@@ -40,6 +41,4 @@ public class PosterFilmManager {
         }
         return tmp;
     }
-
-
 }
