@@ -12,16 +12,6 @@ public class PosterFilmManager {
         this.countFilm = 5;
     }
 
-
-    public void add(String film) {
-        String[] tmp = new String[films.length + 1];
-        for (int i = 0; i < films.length; i++) {
-            tmp[i] = films[i];
-        }
-        tmp[tmp.length - 1] = film;
-        films = tmp;
-    }
-
     public String[] findAll() {
 
         return films;
@@ -40,5 +30,41 @@ public class PosterFilmManager {
             tmp[i] = films[films.length - 1 - i];
         }
         return tmp;
+    }
+
+    public String[] getFindAll() {
+
+        String[] result = new String[films.length];
+        for (int i = 0; i < result.length; i++) {
+            int index = films.length - i - 1;
+            result[i] = films[index];
+        }
+        return result;
+    }
+
+    public void add(String film) {
+        int resultLength = films.length + 1;
+        String[] tmp = new String[resultLength];
+
+        System.arraycopy(films, 0, tmp, 0, films.length);
+
+        int lastIndex = tmp.length - 1;
+        tmp[lastIndex] = film;
+        films = tmp;
+    }
+
+    public String[] getFindLast() {
+        int resultLength = countFilm;
+        if (resultLength > films.length) {
+            resultLength = films.length;
+        }
+
+        String[] result = new String[resultLength];
+
+        for (int i = 0; i < resultLength; i++) {
+            int index = films.length - i - 1;
+            result[i] = films[index];
+        }
+        return result;
     }
 }
