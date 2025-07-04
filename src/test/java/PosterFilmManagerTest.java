@@ -31,7 +31,7 @@ public class PosterFilmManagerTest {
     @Test
     public void shouldGetEmpty() {
         PosterFilmManager manager = new PosterFilmManager(7);
-        String[] actual = manager.getFindAll();
+        String[] actual = manager.findAll();
         String[] expected = new String[]{};
 
         assertArrayEquals(expected, actual);
@@ -106,7 +106,7 @@ public class PosterFilmManagerTest {
     @Test
     public void shouldNoFilms() {
         PosterFilmManager manager = new PosterFilmManager(7);
-        String[] actual = manager.getFindLast();
+        String[] actual = manager.findLast();
         String[] expected = new String[]{};
         assertArrayEquals(expected, actual);
     }
