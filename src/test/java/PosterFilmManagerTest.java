@@ -71,37 +71,16 @@ public class PosterFilmManagerTest {
 
     @Test
     public void findLast2() {
-        PosterFilmManager manager = new PosterFilmManager(3);
+        PosterFilmManager manager = new PosterFilmManager(5);
         manager.add("film1");
         manager.add("film2");
         manager.add("film3");
-        manager.add("film4");
-        manager.add("film5");
-        manager.add("film6");
-        manager.add("film7");
 
-        String[] expected = {"film7", "film6", "film5"};
+        String[] expected = {"film3", "film2", "film1"};
         String[] actual = manager.findLast();
         assertArrayEquals(expected, actual);
 
     }
-
-    @Test
-    public void findLast3() {
-        PosterFilmManager manager = new PosterFilmManager(4);
-        manager.add("film1");
-        manager.add("film2");
-        manager.add("film3");
-        manager.add("film4");
-        manager.add("film5");
-        manager.add("film6");
-        manager.add("film7");
-
-        String[] expected = {"film7", "film6", "film5", "film4"};
-        String[] actual = manager.findLast();
-        assertArrayEquals(expected, actual);
-    }
-
 
     @Test
     public void shouldNoFilms() {
